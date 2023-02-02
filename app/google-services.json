@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "798714411369",
+    "project_id": "login-and-register-barbershop",
+    "storage_bucket": "login-and-register-barbershop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798714411369:android:17e4907928afc730b865f8",
+        "android_client_info": {
+          "package_name": "com.example.jkt12_dompetku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798714411369-ndem9tvturmcojvja5udfa19vtl6bb2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jkt12_dompetku",
+            "certificate_hash": "fb7d7b3332c79a19fe496b3f112464f8cbaa45fe"
+          }
+        },
+        {
+          "client_id": "798714411369-fjhkjvcatf945q5j55423975efovf4u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2BjTN-iKJ4ezUM91S1afl482D5A9dyMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798714411369-fjhkjvcatf945q5j55423975efovf4u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

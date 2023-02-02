@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JKT12_Dompetku</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Sambut promo spesial 4.1 dari  Barbershop, diskon hingga 80% dengan menggunakan kode promo...</string>
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">#FFC107</item>
+    </style>
+
+    <string name="navigation_drawer_open">Open Navgation Drawer</string>
+    <string name="navigation_drawer_close">Close Navgation Drawer</string>
+</resources>

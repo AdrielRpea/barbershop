@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment"
+    android:background="@color/whitethird">
+
+   <View
+       android:id="@+id/BSSearch"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@color/primercolor" />
+
+   <ImageButton
+       android:id="@+id/BSbackleft"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="10dp"
+       android:layout_marginTop="15dp"
+       android:layout_marginEnd="10dp"
+       android:layout_marginBottom="10dp"
+       android:background="@color/primercolor"
+       android:src="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Profile"
+        android:textColor="@color/whiteprimary"
+        android:textSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/PFProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="7dp"
+        android:background="@color/white"
+        android:layout_below="@+id/BSSearch">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/PFImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/fotoprofil" />
+
+                <TextView
+                    android:id="@+id/PFName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/PFImage"
+                    android:text="Micorejeki Aritonang"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PFUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/PFName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="85dp"
+                    android:layout_toRightOf="@id/PFImage"
+                    android:text="#Username"
+                    android:textColor="@color/secondcolor" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/PFUserName"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toRightOf="@id/PFUserName"
+                    android:background="@color/primercolor"
+                    android:text="Edit"
+                    android:textColor="@color/whitesecondary"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PFProfile"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <LinearLayout
+                android:id="@+id/PFAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_gps2" />
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Alamat Saya"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/PFbackright1Alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PFPengaturan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/PFAlamat"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_setting" />
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pengaturan"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/PFbackright2Pengaturan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PFBantuan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/PFPengaturan"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_informasi" />
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Bantuan"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/PFbackright3Bantuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PFTentang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/PFBantuan"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/icon_tentang" />
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Tentang Kami"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/PFbackright4Tentang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/backgroundbutton"
+        android:backgroundTint="@color/primercolor"
+        android:text="Keluar"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

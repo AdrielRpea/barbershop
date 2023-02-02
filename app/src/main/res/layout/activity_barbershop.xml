@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primercolor"
+    tools:context=".BookingPage.BarbershopActivity">
+
+    <RelativeLayout
+        android:id="@+id/BS1Booking"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple">
+
+        <Button
+            android:id="@+id/BS1Btnbooking"
+            android:layout_width="255dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/backgroundbutton"
+            android:text="Book Now"
+            android:textColor="@color/whiteprimary"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/BS1Btnbooking"
+            android:background="@drawable/backgroundbuttonwhite"
+            android:src="@drawable/icon_chat" />
+    </RelativeLayout>
+   <ScrollView
+       android:id="@+id/scrollViewBS"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/BS1Booking">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.cardview.widget.CardView
+               android:id="@+id/BS1Image"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:id="@id/BS1Barber_1"
+                   android:layout_width="match_parent"
+                   android:layout_height="300dp"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/barber5"/>
+           </androidx.cardview.widget.CardView>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="705dp"
+               android:layout_below="@+id/BS1Image"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="2dp"
+               android:layout_marginEnd="-2dp"
+               android:background="@drawable/background_whitesecondary" />
+
+           <TextView
+               android:id="@+id/BS1Name"
+               android:layout_width="320dp"
+               android:layout_height="25dp"
+               android:layout_below="@id/BS1Image"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="15dp"
+               android:text="Ewin Barbershop"
+               android:textColor="@color/whiteprimary"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/BS1Rating1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/BS1Image"
+               android:layout_marginTop="20dp"
+               android:layout_toRightOf="@id/BS1Name"
+               android:drawableStart="@drawable/icon_bintang"
+               android:text=" 4.6"
+               android:textColor="@color/whiteprimary"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/BS1Location"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/BS1Name"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="5dp"
+               android:textColor="@color/abuabu1"
+               android:layout_marginBottom="5dp"
+               android:drawableStart="@drawable/icon_gps"
+               android:text="  Jln Thamrin No 123, Kota Medan" />
+
+           <View
+               android:id="@+id/BS1Circle"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:layout_below="@+id/BS1Location"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="7dp"
+               android:background="@drawable/lingkaran" />
+
+           <TextView
+               android:id="@+id/BS1Open"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/BS1Location"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_toRightOf="@+id/BS1Circle"
+               android:text="OPEN"
+               android:textColor="@color/abuabu2"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/BS1Jambuka"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/BS1Location"
+               android:layout_marginLeft="10dp"
+               android:textColor="@color/abuabu1"
+               android:layout_marginTop="5dp"
+               android:layout_toRightOf="@id/BS1Open"
+               android:drawableStart="@drawable/icon_clock"
+               android:text=" 10.00AM - 20.00PM" />
+
+           <TextView
+               android:id="@+id/BS1Telp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/BS1Circle"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginBottom="10dp"
+               android:drawableStart="@drawable/icon_phone"
+               android:text="  082134516273"
+               android:textColor="@color/phonenumber" />
+
+           <View
+               android:id="@+id/BS1Line"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_below="@+id/BS1Telp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="20dp"
+               android:background="@color/purple"
+               android:visibility="visible" />
+
+           <RelativeLayout
+               android:id="@+id/BSBtnReview"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_below="@id/BS1Line"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/backgroundbuttonpurple">
+
+               <ImageButton
+                   android:id="@+id/BS1Review"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/backgroundbuttonpurple"
+                   android:src="@drawable/icon_jempol" />
+
+               <TextView
+                   android:id="@+id/BS1TxtReview"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="3dp"
+                   android:layout_toRightOf="@id/BS1Review"
+                   android:text="Reviews"
+                   android:textColor="@color/white"
+                   android:textSize="18dp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/BS1TxtReview2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/BS1TxtReview"
+                   android:layout_marginLeft="10dp"
+                   android:layout_toRightOf="@id/BS1Review"
+                   android:text="From 74 Clients"
+                   android:textColor="@color/white" />
+
+               <ImageButton
+                   android:id="@+id/BSbackright"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="200dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_toRightOf="@id/BS1TxtReview"
+                   android:background="@drawable/backgroundbuttonpurple"
+                   android:src="@drawable/icon_arrow_right" />
+
+           </RelativeLayout>
+
+           <TextView
+               android:id="@+id/titlegalery"
+               android:layout_width="320dp"
+               android:layout_height="25dp"
+               android:layout_below="@id/BSBtnReview"
+               android:layout_marginLeft="20dp"
+               android:text="Galery"
+               android:textColor="@color/whiteprimary"
+               android:textSize="18dp"
+               android:textStyle="bold" />
+           <androidx.cardview.widget.CardView
+               android:id="@+id/BS1Galery1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:clickable="true"
+               android:layout_marginLeft="20dp"
+               app:cardCornerRadius="10dp"
+               android:layout_below="@id/titlegalery"
+               android:paddingBottom="10dp"
+               app:cardElevation="7dp">
+
+               <ImageView
+                   android:layout_width="220dp"
+                   android:layout_height="120dp"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/barber4" />
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/BS1Galery2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/BS1Galery1"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="20dp"
+               android:paddingBottom="10dp"
+               app:cardCornerRadius="10dp">
+
+               <ImageView
+                   android:layout_width="220dp"
+                   android:layout_height="190dp"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/barber3" />
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/BS1Galery3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:clickable="true"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_below="@+id/titlegalery"
+               android:layout_toRightOf="@+id/BS1Galery1"
+               app:cardCornerRadius="10dp"
+               android:paddingBottom="10dp"
+               app:cardElevation="7dp">
+
+               <ImageView
+                   android:layout_width="140dp"
+                   android:layout_height="190dp"
+                   android:adjustViewBounds="true"
+                   android:background="@drawable/backgroundbutton"
+                   android:src="@drawable/barber6" />
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/BS1Galery4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_below="@id/BS1Galery3"
+               android:layout_toRightOf="@id/BS1Galery1"
+               android:clickable="true"
+               android:layout_marginLeft="10dp"
+               app:cardCornerRadius="10dp"
+               android:paddingBottom="10dp"
+               app:cardElevation="7dp">
+
+               <ImageView
+                   android:layout_width="140dp"
+                   android:layout_height="120dp"
+                   android:adjustViewBounds="true"
+                   android:background="@drawable/backgroundbutton"
+                   android:src="@drawable/barber7" />
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:id="@+id/titlebarber"
+               android:layout_width="320dp"
+               android:layout_height="25dp"
+               android:layout_below="@id/BS1Galery2"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:text="Barber"
+               android:textColor="@color/whiteprimary"
+               android:textSize="18dp"
+               android:textStyle="bold" />
+
+           <RelativeLayout
+               android:id="@+id/BS1Barber1"
+               android:layout_width="175dp"
+               android:layout_height="200dp"
+               android:layout_below="@id/titlebarber"
+               android:layout_marginLeft="20dp"
+               android:background="@drawable/background_card2">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/BS1Barber_1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="20dp"
+                   app:cardCornerRadius="10dp">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="100dp"
+                       android:adjustViewBounds="true"
+                       android:background="@drawable/backgroundbutton"
+                       android:src="@drawable/bar1" />
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:id="@+id/BS1BarberName1"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_below="@id/BS1Barber_1"
+                   android:layout_marginTop="5dp"
+                   android:gravity="center"
+                   android:text="Derek L."
+                   android:textColor="@color/white"
+                   android:textSize="15dp"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/BS1Barber1About"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_below="@id/BS1BarberName1"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginStart="42dp"
+                   android:layout_marginTop="3dp"
+                   android:background="@drawable/backgroundbuttonpurple"
+                   android:gravity="center"
+                   android:text="About" />
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/BS1Barber2"
+               android:layout_width="175dp"
+               android:layout_height="200dp"
+               android:layout_below="@id/titlebarber"
+               android:layout_marginLeft="20dp"
+               android:layout_toRightOf="@+id/BS1Barber1"
+               android:background="@drawable/background_card2">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/BS1Barber_2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="20dp"
+                   app:cardCornerRadius="10dp">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="100dp"
+                       android:adjustViewBounds="true"
+                       android:background="@drawable/backgroundbutton"
+                       android:src="@drawable/barber1" />
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:id="@+id/BS1BarberName2"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_below="@id/BS1Barber_2"
+                   android:layout_marginTop="5dp"
+                   android:gravity="center"
+                   android:text="Derek L."
+                   android:textColor="@color/white"
+                   android:textSize="15dp"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/BS1Barber2About"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_below="@id/BS1BarberName2"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginStart="42dp"
+                   android:layout_marginTop="3dp"
+                   android:background="@drawable/backgroundbuttonpurple"
+                   android:gravity="center"
+                   android:text="About" />
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

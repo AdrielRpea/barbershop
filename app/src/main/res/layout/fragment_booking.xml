@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_whitesecondary"
+    tools:context=".fragments.BookingFragment">
+
+    <View
+        android:id="@+id/BSSearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primercolor" />
+
+    <ImageButton
+        android:id="@+id/BSbackleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primercolor"
+        android:src="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Choose a Barbershop"
+        android:textColor="@color/whiteprimary"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BSSearch">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/BS1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/BSSearch"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_white"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/BS1Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:src="@drawable/bs1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/BS1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/BS1Image"
+                    android:text="Ewin Barbershop"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS1Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS1Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS1Image"
+                    android:drawableStart="@drawable/icon_gps"
+                    android:text="  Jln Thamrin No 123, Kota Medan"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS1Circle"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/BS1Location"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/BS1Image"
+                    android:background="@drawable/lingkaran" />
+
+                <TextView
+                    android:id="@+id/BS1Open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS1Location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS1Circle"
+                    android:text="OPEN"
+                    android:textColor="@color/abuabu1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS1Jambuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS1Location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/BS1Open"
+                    android:drawableStart="@drawable/icon_clock"
+                    android:text=" 10.00AM - 20.00PM"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS1Line"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/BS1Open"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS1Image"
+                    android:background="@color/hijau" />
+
+                <LinearLayout
+                    android:id="@+id/BS1Rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS1Line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS1Image"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="41 Ratings"
+                        android:textColor="@color/abuabu1" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BS2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/BS1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_white"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/BS2Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:src="@drawable/bs2" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/BS2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/BS2Image"
+                    android:text="Ewin Barbershop"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS2Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS2Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS2Image"
+                    android:drawableStart="@drawable/icon_gps"
+                    android:text="  Jln Thamrin No 123, Kota Medan"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS2Circle"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/BS2Location"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/BS2Image"
+                    android:background="@drawable/lingkaran" />
+
+                <TextView
+                    android:id="@+id/BS2Open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS2Location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS2Circle"
+                    android:text="OPEN"
+                    android:textColor="@color/abuabu1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS2Jambuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS2Location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/BS2Open"
+                    android:drawableStart="@drawable/icon_clock"
+                    android:text=" 10.00AM - 20.00PM"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS2Line"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/BS2Open"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS2Image"
+                    android:background="@color/hijau" />
+
+                <LinearLayout
+                    android:id="@+id/BS2Rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS2Line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS2Image"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="41 Ratings"
+                        android:textColor="@color/abuabu1" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BS3"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/BS2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_white"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/BS3Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:src="@drawable/bs3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/BS3Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/BS3Image"
+                    android:text="Ewin Barbershop"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS3Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS3Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS3Image"
+                    android:drawableStart="@drawable/icon_gps"
+                    android:text="  Jln Thamrin No 123, Kota Medan"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS3Circle"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/BS3Location"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/BS3Image"
+                    android:background="@drawable/lingkaran" />
+
+                <TextView
+                    android:id="@+id/BS3Open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS3Location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS3Circle"
+                    android:text="OPEN"
+                    android:textColor="@color/abuabu1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS3Jambuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS3Location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/BS3Open"
+                    android:drawableStart="@drawable/icon_clock"
+                    android:text=" 10.00AM - 20.00PM"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS3Line"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/BS3Open"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS3Image"
+                    android:background="@color/hijau" />
+
+                <LinearLayout
+                    android:id="@+id/BS3Rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS3Line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS3Image"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="41 Ratings"
+                        android:textColor="@color/abuabu1" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BS4"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/BS3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_white"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/BS4Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:src="@drawable/bs4" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/BS4Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/BS4Image"
+                    android:text="Ewin Barbershop"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS4Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS4Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS4Image"
+                    android:drawableStart="@drawable/icon_gps"
+                    android:text="  Jln Thamrin No 123, Kota Medan"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS4Circle"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/BS4Location"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/BS4Image"
+                    android:background="@drawable/lingkaran" />
+
+                <TextView
+                    android:id="@+id/BS4Open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS4Location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS4Circle"
+                    android:text="OPEN"
+                    android:textColor="@color/abuabu1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS4Jambuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS4Location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/BS4Open"
+                    android:drawableStart="@drawable/icon_clock"
+                    android:text=" 10.00AM - 20.00PM"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS4Line"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/BS4Open"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS4Image"
+                    android:background="@color/hijau" />
+
+                <LinearLayout
+                    android:id="@+id/BS4Rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS4Line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS4Image"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="41 Ratings"
+                        android:textColor="@color/abuabu1" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BS5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/BS4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_white"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/BS5Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:src="@drawable/bs5" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/BS5Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/BS5Image"
+                    android:text="Ewin Barbershop"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS5Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS5Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS5Image"
+                    android:drawableStart="@drawable/icon_gps"
+                    android:text="  Jln Thamrin No 123, Kota Medan"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS5Circle"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/BS5Location"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/BS5Image"
+                    android:background="@drawable/lingkaran" />
+
+                <TextView
+                    android:id="@+id/BS5Open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BS5Location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/BS5Circle"
+                    android:text="OPEN"
+                    android:textColor="@color/abuabu1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BS5Jambuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS5Location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/BS5Open"
+                    android:drawableStart="@drawable/icon_clock"
+                    android:text=" 10.00AM - 20.00PM"
+                    android:textColor="@color/abuabu1" />
+
+                <View
+                    android:id="@+id/BS5Line"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/BS5Open"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS5Image"
+                    android:background="@color/hijau" />
+
+                <LinearLayout
+                    android:id="@+id/BS5Rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BS5Line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/BS5Image"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:drawableStart="@drawable/icon_bintang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="41 Ratings"
+                        android:textColor="@color/abuabu1" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

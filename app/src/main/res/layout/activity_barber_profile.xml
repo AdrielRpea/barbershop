@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Barber.BarberProfile">
+
+    <View
+        android:id="@+id/BPSearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/secondcolor" />
+
+    <ImageButton
+        android:id="@+id/BPbackleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/secondcolor"
+        android:src="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textSize="20dp"
+        android:textColor="@color/whiteprimary"
+        android:text="Choose a Barbershop" />
+
+    <RelativeLayout
+        android:id="@+id/BR1Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BPSearch"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/background_card2"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/BR1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Derek L."
+            android:textColor="@color/whiteprimary"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/BR1Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BR1Name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:drawableStart="@drawable/icon_bintang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:drawableStart="@drawable/icon_bintang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:drawableStart="@drawable/icon_bintang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:drawableStart="@drawable/icon_bintang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:drawableStart="@drawable/icon_bintang" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/BR1Alamat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BR1Rating"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Address"
+            android:textColor="@color/abuabu1"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/BR1Avaiable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BR1Alamat"
+            android:layout_marginTop="2dp"
+            android:text="Availability"
+            android:textColor="@color/abuabu1"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BR1Rating"
+            android:layout_toRightOf="@+id/BR1Alamat"
+            android:text="Jalan Airlanggga no 30"
+            android:textColor="@color/whiteprimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BR1Alamat"
+            android:layout_toRightOf="@+id/BR1Avaiable"
+            android:text="Available"
+            android:textColor="@color/whiteprimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/BR1Review"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/BR1Avaiable"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/backgroundbuttonpurple"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Reviews"
+            android:textColor="@color/whiteprimary" />
+    </RelativeLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/BPSearch"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/bar1" />
+
+    <TextView
+        android:id="@+id/titlegalery"
+        android:layout_width="320dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/BR1Profile"
+        android:layout_marginLeft="20dp"
+        android:text="Galery"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/purple"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BS1Galery1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/titlegalery"
+        android:paddingBottom="10dp"
+        app:cardElevation="7dp">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/barber4" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BS1Galery2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BS1Galery1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="190dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/barber3" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BS1Galery3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/titlegalery"
+        android:layout_toRightOf="@+id/BS1Galery1"
+        app:cardCornerRadius="10dp"
+        android:paddingBottom="10dp"
+        app:cardElevation="7dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backgroundbutton"
+            android:src="@drawable/barber6" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BS1Galery4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/BS1Galery3"
+        android:layout_toRightOf="@id/BS1Galery1"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="10dp"
+        android:paddingBottom="10dp"
+        app:cardElevation="7dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backgroundbutton"
+            android:src="@drawable/barber7" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

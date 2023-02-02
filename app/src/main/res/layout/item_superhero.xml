@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/primercolor"
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:id="@+id/NFT1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NFTSearch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_secondary">
+        <ImageView
+            android:id="@+id/NFT1IconNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_message2" />
+        <TextView
+            android:id="@+id/NFT1JudulNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/NFT1IconNotif"
+            android:text="Promo Spesial"
+            android:textColor="@color/whiteprimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/NFT1Keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NFT1JudulNotif"
+            android:layout_toRightOf="@id/NFT1IconNotif"
+            android:text="Sambut promo spesial 4.1 dari Barbershop, diskon hingga 80% dengan menggunakan kode promo..."
+            android:textColor="@color/whiteprimary"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/NFT1Keterangan"
+            android:background="@color/purple" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

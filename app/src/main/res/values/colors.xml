@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="Bluewall">#2A91AD</color>
+    <color name="primercolor2">#242730</color>
+
+    <color name="phonenumber">#2475D4</color>
+    <color name="lightprimarycolor">#D1C4E9</color>
+    <color name="text">#FFFFFF</color>
+    <color name="primarytext">#212121</color>
+
+    <color name="dividercolor">#BDBDBD</color>
+    <color name="primarybackground">#DBDCE0</color>
+    <color name="lightBtnColor">#E5ECED</color>
+    <color name="abuabu2">#646464</color>
+    <color name="hijau">#1BCB96</color>
+    <color name="cardprimary">#31343D</color>
+
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteprimary">#F1EDF4</color>
+    <color name="whitesecondary">#e5e5e5</color>
+    <color name="purple">#6755DA</color>
+    <color name="blackprimary">#352B31</color>
+    <color name="secondarytext">#757575</color>
+    <color name="secondcolor">#31343D</color>
+
+
+
+    <color name="primercolor">#49268c</color>
+    <color name="accentcolor">#E040FB</color>
+    <color name="hijautelor">#D9EFF7</color>
+    <color name="abuabu1">#828282</color>
+    <color name="whitethird">#f0f0f0</color>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jkt12_dompetku">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BarberShop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JKT12_Dompetku">
+        <activity
+            android:name=".Login.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.RegisterActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingPage.DataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notif.Notif_PopUp"
+            android:exported="false" />
+        <activity
+            android:name=".Notif.Detail_Notification"
+            android:exported="false" />
+        <activity
+            android:name=".Notif.MainNotification"
+            android:exported="false" />
+        <activity
+            android:name=".Notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Barber.BarberProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Barber.BarberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingPage.FormBookingActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".MyAirPlaneReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".login"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Stylepack.StyleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingPage.BarbershopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
